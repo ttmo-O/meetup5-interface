@@ -1,13 +1,7 @@
-<script setup lang="ts">
-// data = {
-//   isActive: false,
-// };
-</script>
-
 <template>
   <div class="item">
     <i>
-      <slot name="icon"></slot>
+      <slot name="time"></slot>
     </i>
     <div class="details">
       <h3>
@@ -47,20 +41,20 @@ h3 {
   color: var(--color-heading);
 }
 
-.selected .details{
+.selected .details {
   color: black;
   transition: 0.4s;
 }
 
 @media (hover: hover) {
-  .item:hover{
+  .item:hover {
     /* background-color: hsla(160, 100%, 37%, 0.2); */
     background-color: #b6a338;
     border-radius: 25px;
     transition: 0.4s;
   }
 
-  .item:hover .details{
+  .item:hover .details {
     color: black;
   }
 }

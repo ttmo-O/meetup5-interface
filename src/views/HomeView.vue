@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from "../components/TheWelcome.vue";
+import ScheduleTable from "../components/ScheduleTable.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <ScheduleTable />
   </main>
 </template>

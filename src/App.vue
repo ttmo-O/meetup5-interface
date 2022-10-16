@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
-import Dwitter from "./components/Dwitter.vue";
+import DwitterBackground from "./components/DwitterBackground.vue";
 </script>
 
 <template>
   <header>
-    <Dwitter></Dwitter>
+    <DwitterBackground></DwitterBackground>
 
-    <!-- <div class="wrapper"> -->
     <div class="column">
       <div class="row">
         <img
@@ -18,17 +17,20 @@ import Dwitter from "./components/Dwitter.vue";
           src="@/assets/ttmo.png"
           width="500"
         />
-        
+
         <div class="wrapper" id="isim">
-          <HelloWorld msg="Türkiye Tersine Mühendisler Odası" body="meetup #5" />
-    
+          <HelloWorld
+            msg="Türkiye Tersine Mühendisler Odası"
+            body="meetup #5"
+          />
+
           <!-- <nav>
             <RouterLink to="/">Home</RouterLink>
             <RouterLink to="/about">About</RouterLink>
           </nav> -->
         </div>
       </div>
-  
+
       <div class="sponsortext">
         Sponsor:
         <img
@@ -39,8 +41,6 @@ import Dwitter from "./components/Dwitter.vue";
         />
       </div>
     </div>
-    <!-- </div> -->
-
   </header>
 
   <RouterView />
@@ -50,6 +50,7 @@ import Dwitter from "./components/Dwitter.vue";
 #isim {
   margin-top: 5rem;
 }
+
 .row {
   display: flex;
   place-items: center;
@@ -59,6 +60,7 @@ import Dwitter from "./components/Dwitter.vue";
 .column {
   display: block;
 }
+
 .sponsortext {
   padding-top: 2em;
   display: grid;

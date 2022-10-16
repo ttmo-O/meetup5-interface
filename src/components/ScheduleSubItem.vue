@@ -1,7 +1,7 @@
 <template>
   <div class="ara-item">
     <i>
-      <slot name="icon"></slot>
+      <slot name="time"></slot>
     </i>
     <div class="details">
       <slot></slot>
@@ -36,13 +36,13 @@ i {
 }
 
 h3 {
-  font-size: 1.0rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 0.4rem;
   color: var(--color-heading);
 }
 
-.selected .details{
+.selected .details {
   color: black;
   transition: 0.4s;
 }
@@ -55,7 +55,7 @@ h3 {
     transition: 0.4s;
   }
 
-  .ara-item:hover .details{
+  .ara-item:hover .details {
     color: black;
   }
 }
