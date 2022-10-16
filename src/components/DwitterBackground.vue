@@ -1,6 +1,6 @@
 <script lang="js">
 export default {
-    name: 'Dwitter',
+    name: 'DwitterBackground',
     mounted() {
         var c = document.getElementById("c");
 
